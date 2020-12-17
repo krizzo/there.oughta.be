@@ -27,7 +27,7 @@
 #define H 64
 
 //Number of CPU cores (or threads) to be represented on the ring
-#define CORES 12
+#define CORES 8
 
 //Temperature thresholds for cool (blue), medium (green/yellow) and hot (red)
 #define T1 40.0 //Do not omit the decimal point. This will be used in the OpenGL shader which will otherwise interpret it as a float literal
@@ -497,7 +497,9 @@ int main(int argc, char *argv[]) {
     RGBMatrix::Options defaults;
     rgb_matrix::RuntimeOptions runtime;
     defaults.hardware_mapping = "adafruit-hat-pwm";
-    defaults.led_rgb_sequence = "RGB";
+    defaults.led_rgb_sequence = "BGR";
+    //defaults.led_slowdown_gpio = 2;
+    //defaults.led_pwm_dither_bits = 2;
     defaults.pwm_bits = 11;
     defaults.pwm_lsb_nanoseconds = 50;
     defaults.panel_type = "FM6126A";
