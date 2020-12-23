@@ -3,21 +3,21 @@ import psutil
 import socket
 import time
 
-TARGET_IP="192.168.2.45"
+TARGET_IP="192.168.16.30"
 TARGET_PORT=1234
 
 while True:
   temperature = 0.0
   time.sleep(0.5)
-  temperature += psutil.sensors_temperatures()["k10temp"][0].current
+  temperature += psutil.sensors_temperatures()["coretemp"][0].current
   time.sleep(0.5)
-  temperature += psutil.sensors_temperatures()["k10temp"][0].current
+  temperature += psutil.sensors_temperatures()["coretemp"][0].current
   time.sleep(0.5)
-  temperature += psutil.sensors_temperatures()["k10temp"][0].current
+  temperature += psutil.sensors_temperatures()["coretemp"][0].current
   time.sleep(0.5)
-  temperature += psutil.sensors_temperatures()["k10temp"][0].current
+  temperature += psutil.sensors_temperatures()["coretemp"][0].current
   time.sleep(0.5)
-  temperature += psutil.sensors_temperatures()["k10temp"][0].current
+  temperature += psutil.sensors_temperatures()["coretemp"][0].current
   temperature /= 5.0
 
   cores = psutil.cpu_percent(percpu=True)
