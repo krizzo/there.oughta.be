@@ -3,7 +3,7 @@ import psutil
 import socket
 import time
 
-TARGET_IP="192.168.16.30"
+TARGET_IP="192.168.28.53"
 TARGET_PORT=1234
 
 while True:
