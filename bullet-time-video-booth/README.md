@@ -8,7 +8,7 @@ This folder contains the code for different aspects of this project, but since t
 
 ## bleButton
 
-The big push buttons that control the bullet time video booth. They are based on a Raspberry Pi Pico W and act as a BLE HID keyboard. Unfortunately, this folder currently only contains a placeholder readme explaining the licencing issue that prevents me from sharing the code.
+Note that I have moved the code for the big push buttons that control the bullet time video booth to [Staacks/pico-w-ble-button](https://github.com/Staacks/pico-w-ble-button) in order to avoid confusion about the license. They are based on a Raspberry Pi Pico W and act as a BLE HID keyboard.
 
 ## bullettimeBooth
 
