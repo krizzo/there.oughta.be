@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">
+        <script src="{{ url_for('static', filename= 'bullettimebooth.js') }}"></script>
+    </head>
+    <body>
+        <div id="instructions">
+            <h2>Anleitung</h2>
+            <p>Hier nehmt ihr kurze 5 Sekunden Video-Schnipsel für Valeska und Marvin auf, die wir nachher zu einem Video mit Musik aus den Aufnahmen des Game Boys und der großen Kamera zusammenschneiden.</p>
+            <ol>
+                <li>Drückt noch einmal die grüne Taste.</li>
+                <li>Wartet den 10 Sekunden Countdown ab.</li>
+                <li>Nehmt für 5 Sekunden ein Video auf.</li>
+                <li>Entscheidet, ob das Video für Valeska und Marvin gespeichert werden soll.</li>
+                <li>Wenn ihr möchtet, könnt ihr Bilder des Game Boys als Erinnerung ausdrucken.</li>
+            </ol>
+            <p><b>Bewegt euch, tanzt, dreht durch!</b></p>
+        </div>
+        <video id="vidNormal"></video>
+        <video id="vidFlipped"></video>
+        <video id="gbVidNormal" class="gb"></video>
+        <video id="gbVidFlipped" class="gb"></video>
+        <img id="printPreview"></img>
+        <div id="countdown"></div>
+        <div id="footer"></div>
+    </body>
+</html>
